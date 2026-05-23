@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+*.log
+
+# Eval results are gitignored — regenerate with: ./scripts/run.sh eval
+data/results/*.csv
+data/results/*.json
+
+# Keep the cache dir structure but not the cached files (can be large)
+data/seeds/eval_cache/*.json
+

@@ -1,0 +1,74 @@
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: riverline
+      POSTGRES_USER: riverline
+      POSTGRES_PASSWORD: riverline
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./src/db/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U riverline"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  temporal:
+    image: temporalio/auto-setup:1.24
+    environment:
+      - DB=postgres12
+      - DB_PORT=5432
+      - POSTGRES_USER=riverline
+      - POSTGRES_PWD=riverline
+      - POSTGRES_SEEDS=postgres
+    ports:
+      - "7233:7233"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  temporal-ui:
+    image: temporalio/ui:latest
+    environment:
+      - TEMPORAL_ADDRESS=temporal:7233
+    ports:
+      - "8080:8080"
+    depends_on:
+      - temporal
+
+  worker:
+    build: .
+    command: pnpm run worker
+    environment:
+      - TEMPORAL_ADDRESS=temporal:7233
+      - DATABASE_URL=postgresql://riverline:riverline@postgres:5432/riverline
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - VAPI_API_KEY=${VAPI_API_KEY}
+      - COMPANY_NAME=${COMPANY_NAME:-Riverline Financial}
+    depends_on:
+      - temporal
+      - postgres
+    restart: on-failure
+
+  api:
+    build: .
+    command: pnpm run api
+    ports:
+      - "3000:3000"
+    environment:
+      - TEMPORAL_ADDRESS=temporal:7233
+      - DATABASE_URL=postgresql://riverline:riverline@postgres:5432/riverline
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - VAPI_API_KEY=${VAPI_API_KEY}
+      - COMPANY_NAME=${COMPANY_NAME:-Riverline Financial}
+      - PORT=3000
+    depends_on:
+      - temporal
+      - postgres
+    restart: on-failure
+
+volumes:
+  postgres_data:

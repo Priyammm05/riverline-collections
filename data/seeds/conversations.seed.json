@@ -1,0 +1,5 @@
+{
+  "seed": 42,
+  "description": "Fixed seed for reproducible test runs. Populated in Phase 5 by test-harness.ts.",
+  "conversations": []
+}

@@ -1,0 +1,46 @@
+{
+  "name": "riverline-collections",
+  "version": "1.0.0",
+  "description": "Self-learning AI debt collections agent pipeline",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "worker": "tsx src/temporal/worker.ts",
+    "api": "tsx src/api/server.ts",
+    "build": "tsc",
+    "eval": "EVAL_SEED=42 tsx scripts/run-eval.ts",
+    "trigger": "tsx scripts/trigger-borrower.ts",
+    "test": "node --require tsx/cjs --test src/__tests__/*.test.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
+    "@temporalio/activity": "^1.11.4",
+    "@temporalio/client": "^1.11.4",
+    "@temporalio/worker": "^1.11.4",
+    "@temporalio/workflow": "^1.11.4",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "js-tiktoken": "^1.0.15",
+    "openai": "^6.38.0",
+    "pg": "^8.13.3",
+    "uuid": "^11.0.5"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.0",
+    "@types/pg": "^8.11.10",
+    "@types/uuid": "^10.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@swc/core",
+      "esbuild",
+      "protobufjs"
+    ]
+  }
+}
