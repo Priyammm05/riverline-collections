@@ -1,0 +1,140 @@
+[
+  {
+    "agent_id": "assessment",
+    "versions": [
+      {
+        "version": 1,
+        "n_conversations": 15,
+        "mean_score": 4.828,
+        "std_dev": 1.95,
+        "p_value_vs_prev": null,
+        "adopted": true,
+        "rollback_reason": null
+      }
+    ],
+    "meta_evaluation_findings": [
+      {
+        "flaw": "Compliance checker blind spot — Prompt has no AI disclosure — agent never identifies as AI agent or artificial intelligence. Rule RULE_1_AI_DISCLOSURE passes when it should fail.",
+        "fix": "Add keyword check: prompt must contain \"AI agent\" or \"artificial intelligence\" to pass Rule 1 (RULE_1_AI_DISCLOSURE).",
+        "adopted": true
+      },
+      {
+        "flaw": "Compliance checker blind spot — Prompt has no AI disclosure — agent never identifies as AI agent or artificial intelligence. Rule RULE_1_AI_DISCLOSURE passes when it should fail.",
+        "fix": "Add keyword check: prompt must contain \"AI agent\" or \"artificial intelligence\" to pass Rule 1 (RULE_1_AI_DISCLOSURE).",
+        "adopted": true
+      },
+      {
+        "flaw": "Compliance checker blind spot — Prompt has no AI disclosure — agent never identifies as AI agent or artificial intelligence. Rule RULE_1_AI_DISCLOSURE passes when it should fail.",
+        "fix": "Add keyword check: prompt must contain \"AI agent\" or \"artificial intelligence\" to pass Rule 1 (RULE_1_AI_DISCLOSURE).",
+        "adopted": true
+      },
+      {
+        "flaw": "Compliance checker blind spot — Prompt has no AI disclosure — agent never identifies as AI agent or artificial intelligence. Rule RULE_1_AI_DISCLOSURE passes when it should fail.",
+        "fix": "Add keyword check: prompt must contain \"AI agent\" or \"artificial intelligence\" to pass Rule 1 (RULE_1_AI_DISCLOSURE).",
+        "adopted": true
+      },
+      {
+        "flaw": "Compliance checker blind spot — Prompt has no AI disclosure — agent never identifies as AI agent or artificial intelligence. Rule RULE_1_AI_DISCLOSURE passes when it should fail.",
+        "fix": "Add keyword check: prompt must contain \"AI agent\" or \"artificial intelligence\" to pass Rule 1 (RULE_1_AI_DISCLOSURE).",
+        "adopted": true
+      },
+      {
+        "flaw": "Compliance checker blind spot — Prompt has no AI disclosure — agent never identifies as AI agent or artificial intelligence. Rule RULE_1_AI_DISCLOSURE passes when it should fail.",
+        "fix": "Add keyword check: prompt must contain \"AI agent\" or \"artificial intelligence\" to pass Rule 1 (RULE_1_AI_DISCLOSURE).",
+        "adopted": true
+      }
+    ]
+  },
+  {
+    "agent_id": "resolution",
+    "versions": [
+      {
+        "version": 1,
+        "n_conversations": 15,
+        "mean_score": 5.282,
+        "std_dev": 2.047,
+        "p_value_vs_prev": null,
+        "adopted": true,
+        "rollback_reason": null
+      }
+    ],
+    "meta_evaluation_findings": [
+      {
+        "flaw": "Compliance checker blind spot — Prompt has no AI disclosure — agent never identifies as AI agent or artificial intelligence. Rule RULE_1_AI_DISCLOSURE passes when it should fail.",
+        "fix": "Add keyword check: prompt must contain \"AI agent\" or \"artificial intelligence\" to pass Rule 1 (RULE_1_AI_DISCLOSURE).",
+        "adopted": true
+      },
+      {
+        "flaw": "Compliance checker blind spot — Prompt has no AI disclosure — agent never identifies as AI agent or artificial intelligence. Rule RULE_1_AI_DISCLOSURE passes when it should fail.",
+        "fix": "Add keyword check: prompt must contain \"AI agent\" or \"artificial intelligence\" to pass Rule 1 (RULE_1_AI_DISCLOSURE).",
+        "adopted": true
+      },
+      {
+        "flaw": "Compliance checker blind spot — Prompt has no AI disclosure — agent never identifies as AI agent or artificial intelligence. Rule RULE_1_AI_DISCLOSURE passes when it should fail.",
+        "fix": "Add keyword check: prompt must contain \"AI agent\" or \"artificial intelligence\" to pass Rule 1 (RULE_1_AI_DISCLOSURE).",
+        "adopted": true
+      },
+      {
+        "flaw": "Compliance checker blind spot — Prompt has no AI disclosure — agent never identifies as AI agent or artificial intelligence. Rule RULE_1_AI_DISCLOSURE passes when it should fail.",
+        "fix": "Add keyword check: prompt must contain \"AI agent\" or \"artificial intelligence\" to pass Rule 1 (RULE_1_AI_DISCLOSURE).",
+        "adopted": true
+      },
+      {
+        "flaw": "Compliance checker blind spot — Prompt has no AI disclosure — agent never identifies as AI agent or artificial intelligence. Rule RULE_1_AI_DISCLOSURE passes when it should fail.",
+        "fix": "Add keyword check: prompt must contain \"AI agent\" or \"artificial intelligence\" to pass Rule 1 (RULE_1_AI_DISCLOSURE).",
+        "adopted": true
+      },
+      {
+        "flaw": "Compliance checker blind spot — Prompt has no AI disclosure — agent never identifies as AI agent or artificial intelligence. Rule RULE_1_AI_DISCLOSURE passes when it should fail.",
+        "fix": "Add keyword check: prompt must contain \"AI agent\" or \"artificial intelligence\" to pass Rule 1 (RULE_1_AI_DISCLOSURE).",
+        "adopted": true
+      }
+    ]
+  },
+  {
+    "agent_id": "final_notice",
+    "versions": [
+      {
+        "version": 1,
+        "n_conversations": 15,
+        "mean_score": 5.187,
+        "std_dev": 2.018,
+        "p_value_vs_prev": null,
+        "adopted": true,
+        "rollback_reason": null
+      }
+    ],
+    "meta_evaluation_findings": [
+      {
+        "flaw": "Compliance checker blind spot — Prompt has no AI disclosure — agent never identifies as AI agent or artificial intelligence. Rule RULE_1_AI_DISCLOSURE passes when it should fail.",
+        "fix": "Add keyword check: prompt must contain \"AI agent\" or \"artificial intelligence\" to pass Rule 1 (RULE_1_AI_DISCLOSURE).",
+        "adopted": true
+      },
+      {
+        "flaw": "Compliance checker blind spot — Prompt has no AI disclosure — agent never identifies as AI agent or artificial intelligence. Rule RULE_1_AI_DISCLOSURE passes when it should fail.",
+        "fix": "Add keyword check: prompt must contain \"AI agent\" or \"artificial intelligence\" to pass Rule 1 (RULE_1_AI_DISCLOSURE).",
+        "adopted": true
+      },
+      {
+        "flaw": "Compliance checker blind spot — Prompt has no AI disclosure — agent never identifies as AI agent or artificial intelligence. Rule RULE_1_AI_DISCLOSURE passes when it should fail.",
+        "fix": "Add keyword check: prompt must contain \"AI agent\" or \"artificial intelligence\" to pass Rule 1 (RULE_1_AI_DISCLOSURE).",
+        "adopted": true
+      },
+      {
+        "flaw": "Compliance checker blind spot — Prompt has no AI disclosure — agent never identifies as AI agent or artificial intelligence. Rule RULE_1_AI_DISCLOSURE passes when it should fail.",
+        "fix": "Add keyword check: prompt must contain \"AI agent\" or \"artificial intelligence\" to pass Rule 1 (RULE_1_AI_DISCLOSURE).",
+        "adopted": true
+      },
+      {
+        "flaw": "Compliance checker blind spot — Prompt has no AI disclosure — agent never identifies as AI agent or artificial intelligence. Rule RULE_1_AI_DISCLOSURE passes when it should fail.",
+        "fix": "Add keyword check: prompt must contain \"AI agent\" or \"artificial intelligence\" to pass Rule 1 (RULE_1_AI_DISCLOSURE).",
+        "adopted": true
+      },
+      {
+        "flaw": "Compliance checker blind spot — Prompt has no AI disclosure — agent never identifies as AI agent or artificial intelligence. Rule RULE_1_AI_DISCLOSURE passes when it should fail.",
+        "fix": "Add keyword check: prompt must contain \"AI agent\" or \"artificial intelligence\" to pass Rule 1 (RULE_1_AI_DISCLOSURE).",
+        "adopted": true
+      }
+    ]
+  }
+]
